@@ -1,7 +1,5 @@
 defmodule RecipeBook.Recipes.Recipe do
-  @moduledoc """
-  The "recipes" schema.
-  """
+  @moduledoc false
 
   use Ecto.Schema
   import Ecto.Changeset

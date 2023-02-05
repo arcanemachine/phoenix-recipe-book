@@ -1,0 +1,12 @@
+<.header class="mb-10">
+  Recipe List
+</.header>
+
+<%= if Enum.empty?(@recipes) do %>
+  <p>No recipes have been created.</p>
+<% else %>
+  <.table id="recipes" rows={@recipes}>
+    <:col :let={recipe} label="Title"><%= recipe.title %></:col>
+    <:col :let={recipe} label="Content"><%= recipe.content %></:col>
+  </.table>
+<% end %>

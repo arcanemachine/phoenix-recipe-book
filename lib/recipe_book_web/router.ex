@@ -19,6 +19,7 @@ defmodule RecipeBookWeb.Router do
 
     get "/", PageController, :home
     get "/hello", HelloController, :index
+    get "/recipes", RecipeController, :index
   end
 
   # Other scopes may use custom stacks.
